@@ -2,6 +2,7 @@ class WordCounter
 	constructor : ->
 		@memory = {}
 	count : (string,minLen=2)->
+		string = string.replace(/[,\.:;\t\n…"']/g,' ')
 		words = string.split(/\s/).filter((e)-> e.length > minLen)
 		for word in words
 			@memory[word] ?= 0
