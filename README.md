@@ -9,12 +9,12 @@ This little repo can receive a stream of texts and count all the words grouped b
 
 ##Usage
 
-	WordCounter = require('wordcounter');
-	wc = new WordCounter();
+	var WordCounter = require('wordcounter');
+	var wc = new WordCounter();
 
 	wc.count("string of several words in this string");
 
-	report = wc.report();
+	var report = wc.report();
 
 	console.log(report);
 
