@@ -34,11 +34,15 @@ This little repo can receive a stream of texts and count all the words grouped b
 ~~~~
 
 ##Definitions
-### wc.count(STRING [,minLen])
+### new WordCounter([SkipWords])
+
+- SkipWords: (Optional | Array) An array of words to skip counting
+
+### wc.count(input [,minLen])
 Counts the words inside a given string.
 
-- STRING: (Required) Any type of text string to count the words
-- minLen: (Optional) The minimum length of word to be counted, default=2
+- input: (Required | String) Any type of text string to count the words
+- minLen: (Optional | Integer) The minimum length of word to be counted, default=2
 
 ### wc.report()
 Returns an ordered array of [Word,quantity]. No params needed

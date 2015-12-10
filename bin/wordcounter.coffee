@@ -1,9 +1,14 @@
 class WordCounter
-	constructor : ->
+	constructor : (sk = [])->
+		@skipWords = sk
 		@memory = {}
 	count : (string,minLen=2)->
 		string = string.replace(/[,\.:;\t\n…"']/g,' ')
-		words = string.split(/\s/).filter((e)-> e.length > minLen)
+		words = string.split(/\s/).filter(
+			(e)-> e.length > minLen
+		).filter(
+			(e)=> @skipWords.indexOf(e) is -1
+		)
 		for word in words
 			@memory[word] ?= 0
 			@memory[word]++
