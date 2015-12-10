@@ -8,7 +8,7 @@ This little repo can receive a stream of texts and count all the words grouped b
 	npm install --save wordcounter
 
 ##Usage
-
+~~~~Javascript
 	var WordCounter = require('wordcounter');
 	var wc = new WordCounter();
 
