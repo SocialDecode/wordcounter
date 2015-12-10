@@ -1,6 +1,6 @@
 {
-  "name": "wordcounter",
-  "version": "1.0.0",
+  "name": "word-counter",
+  "version": "1.0.1",
   "description": "",
   "main": "wordcounter.js",
   "scripts": {

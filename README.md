@@ -5,12 +5,12 @@ This little repo can receive a stream of texts and count all the words grouped b
 
 ##Install
 
-	npm install --save wordcounter
+	npm install --save word-counter
 
 ##Usage
 
 ~~~~Javascript
-	var WordCounter = require('wordcounter');
+	var WordCounter = require('word-counter');
 	var wc = new WordCounter();
 
 	wc.count("string of several words in this string");
