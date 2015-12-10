@@ -1,0 +1,14 @@
+{
+  "name": "wordcounter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "wordcounter.js",
+  "scripts": {
+    "test": "coffee ./test/test.coffee"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "coffee-script": "1.10.0"
+  }
+}
