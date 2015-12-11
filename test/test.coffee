@@ -4,6 +4,7 @@ wc = new WordCounter
 console.time 'terminado en'
 
 rl = require('readline').createInterface({
+	terminal: false,
 	input: require('fs').createReadStream(__dirname+'/lorem.txt')
 })
 lc = 0
