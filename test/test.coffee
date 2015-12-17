@@ -19,4 +19,5 @@ rl.on 'close', ->
 	console.log lc, 'lineas'
 	console.log reporte[0..20]
 	console.log wc.raw()
+	console.log "top 10", wc.raw(10)
 	console.timeEnd 'terminado en'
