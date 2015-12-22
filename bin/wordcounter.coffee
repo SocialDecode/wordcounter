@@ -10,7 +10,7 @@ class WordCounter
 		words = string.split(/\s/).filter(
 			(e)-> e.length > minLen
 		).filter(
-			(e)=> @skipWords.indexOf(e) is -1
+			(e)=> @skipWords.indexOf(e.toLowerCase()) is -1
 		)
 		for word in words.concat(links)
 			@memory[word] ?= 0
