@@ -21,6 +21,15 @@ class WordCounter
 			arr.push [k,v]
 		arr.sort (a,b)-> b[1] - a[1]
 		return arr
-	raw : -> return @memory
+	raw : (limit = false)->
+		if limit
+			sortable = []
+			sortable.push([word, @memory[word]]) for word of @memory
+			sortable = sortable.sort((a, b)->a[1] - b[1]).splice(limit*-1)
+			retval = {}
+			retval[wordval[0]] = wordval[1] for wordval in sortable
+			return retval
+		else
+			return @memory
 
 module.exports = WordCounter
