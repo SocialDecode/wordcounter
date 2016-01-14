@@ -1,4 +1,4 @@
-WordCounter
+WordCounter  
 ===============
 
 This little repo can receive a stream of texts and count all the words grouped by incidences.  
