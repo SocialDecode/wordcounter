@@ -25,7 +25,7 @@ class WordCounter
 		if limit
 			sortable = []
 			sortable.push([word, @memory[word]]) for word of @memory
-			sortable = sortable.sort((a, b)->a[1] - b[1]).splice(limit*-1)
+			sortable = sortable.sort((a, b)->b[1] - a[1])[0...limit]
 			retval = {}
 			retval[wordval[0]] = wordval[1] for wordval in sortable
 			return retval
